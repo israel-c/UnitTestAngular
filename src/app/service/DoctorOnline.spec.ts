@@ -7,25 +7,26 @@ let doctor: Doctor;
 let doctorOnline: DoctorOnline;
     beforeEach( ()=>{
  doctorOnline= new DoctorOnline();
-  doctor= new Doctor();
+  
 });
 
 
 it('Should return true if input is active',()=>{
-
+  doctor= new Doctor('active');
 const result = doctorOnline.isDoctorOnline(doctor);
 
 expect(result).toBe(true);
 
 });
 
- it('Should return false when input is inactive',()=>{
 
+it('Should return false when input is inactive',()=>{
+  doctor= new Doctor('inactive');
 const result= doctorOnline.isDoctorOnline(doctor);
 
 expect(result).toBe(false);
 
- })
+ });
 
 
 });

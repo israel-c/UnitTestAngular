@@ -1,7 +1,7 @@
 export class Doctor{
 
-
-   public status:string='inactive';
+constructor(public status:string){}
+   
     
     
 }
