@@ -12,10 +12,20 @@ let doctorOnline: DoctorOnline;
 
 
 it('Should return true if input is active',()=>{
+
 const result = doctorOnline.isDoctorOnline(doctor);
+
 expect(result).toBe(true);
+
 });
 
+ it('Should return false when input is inactive',()=>{
+
+const result= doctorOnline.isDoctorOnline(doctor);
+
+expect(result).toBe(false);
+
+ })
 
 
 });

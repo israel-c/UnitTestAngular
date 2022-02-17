@@ -1,7 +1,7 @@
 export class Doctor{
 
 
-   public status:string='active';
+   public status:string='inactive';
     
     
 }
